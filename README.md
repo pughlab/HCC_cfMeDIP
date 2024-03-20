@@ -9,4 +9,6 @@ Our findings demonstrate the potential of cfMeDIP-Seq for sensitive and specific
 The repository contains bash scripts, data processing scripts, and R scripts designed to reproduce figures for the manuscript.
 
 ## Setup
-R scripts were executed in either R version 3.5.0 or 4.0.1, depending on the specific package dependencies (listeded in Table 1), utilizing RStudio versions (2022.12.0+353 ~ 2023.12.0+369).  The R packages required are detailed within each script.  Bash scripts were run on the high performance computing (HPC) cluster at the Princess Margaret Genomics Centre (University Health Network).
+R scripts were executed in either R version 3.5.0 or 4.0.1, depending on the specific package dependencies (listeded in Table 1), utilizing RStudio versions (2022.12.0+353 ~ 2023.12.0+369).  
+The R packages required are detailed within each script.  
+Bash scripts were run on the high performance computing (HPC) cluster at the Princess Margaret Genomics Centre (University Health Network).
