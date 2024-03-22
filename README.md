@@ -14,3 +14,12 @@ R scripts were executed in either R version 3.5.0 or 4.0.1, depending on the spe
 The R packages required are detailed within each script.  
 
 Bash scripts were run on the high performance computing (HPC) cluster at the Princess Margaret Genomics Centre (University Health Network).
+
+## Workflow
+|  |  |  |  |  |  |
+|:---|:---|:---|:---|:---|:---|
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |
+|  |  |  |  |  |  |  
