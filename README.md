@@ -16,10 +16,4 @@ The R packages required are detailed within each script.
 Bash scripts were run on the high performance computing (HPC) cluster at the Princess Margaret Genomics Centre (University Health Network).
 
 ## Workflow
-|  |  |  |  |  |  |
-|:---|:---|:---|:---|:---|:---|
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |
-|  |  |  |  |  |  |  
+![Graphical_abstract](https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/91b31a5c-1920-4214-99c9-5d5c28981fb4)
