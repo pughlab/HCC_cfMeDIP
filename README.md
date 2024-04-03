@@ -15,10 +15,13 @@ The R packages required are detailed within each script.
 
 Bash scripts were run on the high performance computing (HPC) cluster at the Princess Margaret Genomics Centre (University Health Network).
 
-## Workflow
+## HCC cfMeDIP Workflow
 ![Graphical_abstract](https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/91b31a5c-1920-4214-99c9-5d5c28981fb4)
 
-## Data Analysis
+## HCC cfMeDIP Data Analysis Schemes
+<img width="2506" alt="HCC_cfMeDIP_data_analysis_shceme_v1" src="https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/4c137a1e-fcce-4dc2-adbd-bd7124ec0be5">
+
+
 ### List of Tools
 |Tool         | Function                                   | Version    | Running_Platform  | Language | Alternative_tool| Link                                                             |
 |--------------:|:----------------------------------------------------------------------|:------------|:--------------------------|:------:|:----------------------------|:------------------------------------------------------------------|
