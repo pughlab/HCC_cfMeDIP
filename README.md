@@ -21,17 +21,17 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 ## List of tools
 |      Package | Version    | H4H/R3.5 | H4H/R4.0 | H4H/R4.2 | --mem  | running time |
 | -----------: | :--------- | :------: | :------: | :------: | ------ | ------------ |
-|       MEDIPS | 1.50.0     |    􀆅    |    􀆅    |  **􀆄**  | ≥ 180G | ~1 day       |
-|   MeDEStrand | 0.0.0.9000 |    􀆅    |  **􀆄**  |  **􀆄**  | ≥ 180G | 1~2 days     |
-|        ChAMP | 2.28.0     |  **􀆄**  |    􀆅    |    NA    | ≥ 300G | 1~2 days     |
-|       DESeq2 | 1.38.2     |    􀆅    |  **􀆄**  |    􀆅    | ≥ 180G | ~1 day       |
-|        limma | 3.42.0     |    􀆅    |    􀆅    |    􀆅    |        | 1~2 days     |
-|        edgeR | 3.28.0     |    􀆅    |    􀆅    |  **􀆄**  |        | 1~2 days     |
-|   FactoMineR | 2.8        |  **􀆄**  |    􀆅    |    􀆅    |        |              |
-|   factoextra | 1.0.7      |  **􀆄**  |    􀆅    |    􀆅    |        |              |
-|        dplyr | 1.1.1      |    􀆅    |  **􀆄**  |    􀆅    |        |              |
-|        tidyr | 1.3.0      |    􀆅    |  **􀆄**  |    􀆅    |        |              |
-|          sva | 3.46.0     |  **􀆄**  |    􀆅    |  **􀆄**  | ≥ 500G | ~1 day       |
-|        caret | 6.0        |    􀆅    |  **􀆄**  |  **􀆄**  | ≥ 80G  | ~2 days      |
-| randomForest | 4.7.1.1    |    􀆅    |    􀆅    |  **􀆄**  | ≥ 80G  | ~2 days      |
-|       glmnet | 4.1.7      |    􀆅    |  **􀆄**  |  **􀆄**  | ≥ 80G  | ~2 days      |
+|       MEDIPS | 1.50.0     |   ✅    |    ✅     |  ❌  | ≥ 180G | ~1 day       |
+|   MeDEStrand | 0.0.0.9000 |    ✅    |  ❌  |  ❌  | ≥ 180G | 1~2 days     |
+|        ChAMP | 2.28.0     |  ❌  |    ✅     |    NA    | ≥ 300G | 1~2 days     |
+|       DESeq2 | 1.38.2     |    ✅     |  ❌  |    ✅     | ≥ 180G | ~1 day       |
+|        limma | 3.42.0     |    ✅     |    ✅     |    ✅     |        | 1~2 days     |
+|        edgeR | 3.28.0     |    ✅     |    ✅    |  ❌  |        | 1~2 days     |
+|   FactoMineR | 2.8        |  ❌  |    ✅    |    ✅    |        |              |
+|   factoextra | 1.0.7      |  ❌  |    ✅     |    ✅     |        |              |
+|        dplyr | 1.1.1      |    ✅    |  ❌  |    ✅     |        |              |
+|        tidyr | 1.3.0      |    ✅     |  ❌  |    ✅     |        |              |
+|          sva | 3.46.0     |  ❌ |    ✅     |  ❌ | ≥ 500G | ~1 day       |
+|        caret | 6.0        |    ✅     |  ❌  |  ❌ | ≥ 80G  | ~2 days      |
+| randomForest | 4.7.1.1    |    ✅    |    ✅     | ❌  | ≥ 80G  | ~2 days      |
+|       glmnet | 4.1.7      |    ✅     |  ❌  |  ❌  | ≥ 80G  | ~2 days      |
