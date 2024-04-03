@@ -21,7 +21,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 ## Data Analysis
 ### List of Tools
 |Tool         | Function                                   | Version    | Running_Platform  | Language | Alternative_tool| Link                                                             |
-|--------------:|:---------------------------------------------------------|:------------|:--------------------------|:------:|:----------------------------|:------------------------------------------------------------------|
+|--------------:|:----------------------------------------------------------------------|:------------|:--------------------------|:------:|:----------------------------|:------------------------------------------------------------------|
 | FastQC       | FASTQ QC                                   | 0.11.5     | H4H_shell        | Java     |                            | http://www.bioinformatics.babraham.ac.uk/projects/fastqc        |
 | MultiQC      | ❶ FASTQ QC<br>❷ count reads                       | 1.7        | H4H_shell        | Python   |                            | https://multiqc.info                                             |
 | fastp        | ❶ IFSD QC3<br>❷ trim                              | 0.23.1     | H4H_shell        | C++      |❶ Trim Galore<br>❷ Trimmomatic<br>❸ Cutadapt| https://github.com/OpenGene/fastp                  |
