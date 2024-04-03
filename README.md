@@ -20,7 +20,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 
 ## Data Analysis
 ### List of Tools
-|Tool         | Function                                   | Version    | Running_Platform  | Language | Alternative</br>| Link                                                             |
+|Tool         | Function                                   | Version    | Running_Platform  | Language | Alternative_tool| Link                                                             |
 |--------------:|:---------------------------------------------------------|:------------|:--------------------------|:----------|:----------------------------|:------------------------------------------------------------------|
 | FastQC       | FASTQ QC                                   | 0.11.5     | H4H_shell        | Java     |                            | http://www.bioinformatics.babraham.ac.uk/projects/fastqc        |
 | MultiQC      | ❶ FASTQ QC<br>❷ count reads                       | 1.7        | H4H_shell        | Python   |                            | https://multiqc.info                                             |
@@ -29,7 +29,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | qualimap     | BAM QC                                     | 2.2        | H4H_shell        | Java     |                            | http://qualimap.conesalab.org                                   |
 | SAMtools     | sort - index                               | 1.14       | H4H_shell        | C        |Picard                      | http://www.htslib.org                                           |
 | sambamba     | deduplicate                                | 0.7.0      | H4H_shell        | D        |❶ SAMtools<br>❷ Picard| https://lomereiter.github.io/sambamba                           |
-| MEDIPS       | ❶ QC2<br>❷ export wig<br>❸ DMRs/ROIs(edgeR)| 1.50.0     | H4H_R/3.5.0      | R        | DESeq2                      | https://doi.org/doi:10.18129/B9.bioc.MEDIPS                     |
+| MEDIPS       | ❶ QC2<br>❷ export wig<br>❸ DMRs/ROIs(edgeR)</br>| 1.50.0     | H4H_R/3.5.0      | R        | DESeq2                      | https://doi.org/doi:10.18129/B9.bioc.MEDIPS                     |
 | MeDEStrand   |absolute methylation levels</br>| 0.0.0.9000 |H4H_R/3.5.0      | R        |   | https://github.com/jxu1234/MeDEStrand                           |
 | sva/ComBat_seq | reduce batch effect                       | 3.46.0     |H4H_R/4.0.1      | R        |                            | https://github.com/zhangyuqing/ComBat-seq                       |
 | edgeR        |❶ TMM normalization<br>❷ CPM counts| 3.28.0     |H4H_R/4.0.1      | R        |                            | https://bioconductor.org/packages/release/bioc/html/edgeR.html  |
