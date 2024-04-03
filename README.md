@@ -23,7 +23,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | Tool         | Function                                   | Version    | Running Platform  | Language | Alternative                | Link                                                             |
 |--------------|--------------------------------------------|------------|-------------------|----------|----------------------------|------------------------------------------------------------------|
 | FastQC       | FASTQ QC                                   | 0.11.5     | H4H, shell        | Java     |                            | http://www.bioinformatics.babraham.ac.uk/projects/fastqc        |
-| MultiQC      | FASTQ QC count reads                       | 1.7        | H4H, shell        | Python   |                            | https://multiqc.info                                             |
+| MultiQC      | ❶ FASTQ QC ❷❸❹ count reads                       | 1.7        | H4H, shell        | Python   |                            | https://multiqc.info                                             |
 | fastp        | IFSD QC3 trim                              | 0.23.1     | H4H, shell        | C++      | Trim Galore, Trimmomatic, Cutadapt | https://github.com/OpenGene/fastp                  |
 | bowtie2      | align                                      | 2.4.5      | H4H, shell        | C++      | BWA-mem                     | https://bowtie-bio.sourceforge.net/bowtie2/index.shtml          |
 | qualimap     | BAM QC                                     | 2.2        | H4H, shell        | Java     |                            | http://qualimap.conesalab.org                                   |
