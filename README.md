@@ -37,7 +37,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | FactoMineR/factoextra |PCA                              | 2.8/1.0.7  |❶ H4H_R/4.0.1<br>❷ RStudio | R  |                            | https://rpkgs.datanovia.com/factoextra/index.html               |
 | randomForest |❶ build & train models<br>❷ classification predictions| 4.7.1.1 |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://www.stat.berkeley.edu/users/breiman/RandomForests       |
 | glmnet       | regularized linear modeling                | 4.1.7      |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://glmnet.stanford.edu/index.html                          |
-| caret        | model training configuration               | 6.0        |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://topepo.github.io/caret                                  |
+| caret        | _model training configuration_| 6.0        |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://topepo.github.io/caret                                  |
 | pROC         | AUROC                                      | 1.18.0     | RStudio           | R        |                            | https://xrobin.github.io/pROC                                   |
 | ggplot2      |                                            | 3.4.2      | RStudio           | R        |                            | https://ggplot2.tidyverse.org                                   |
 
