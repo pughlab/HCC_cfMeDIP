@@ -33,7 +33,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | MeDEStrand   |absolute methylation levels</br>| 0.0.0.9000 |H4H_R/3.5.0      | R        |   | https://github.com/jxu1234/MeDEStrand                           |
 | sva/ComBat_seq | reduce batch effect                       | 3.46.0     |H4H_R/4.0.1      | R        |                            | https://github.com/zhangyuqing/ComBat-seq                       |
 | edgeR        |❶ TMM normalization<br>❷ CPM counts| 3.28.0     |H4H_R/4.0.1      | R        |                            | https://bioconductor.org/packages/release/bioc/html/edgeR.html  |
-| limma        |❶ vCounts<br>❷ DMRs(CPM/limma_trend)</br>| 3.42.0 |❶ H4H_R/4.0.1<br>❷ RStudio | R  |                            | https://bioconductor.org/packages/release/bioc/html/limma.html  |
+| limma        |❶ vCounts<br>❷ DMRs(CPM/trend)| 3.42.0 |❶ H4H_R/4.0.1<br>❷ RStudio | R  |                            | https://bioconductor.org/packages/release/bioc/html/limma.html  |
 | FactoMineR/factoextra |PCA                              | 2.8/1.0.7  |❶ H4H_R/4.0.1<br>❷ RStudio | R  |                            | https://rpkgs.datanovia.com/factoextra/index.html               |
 | randomForest |❶ build & train models<br>❷ classification predictions</br>| 4.7.1.1 |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://www.stat.berkeley.edu/users/breiman/RandomForests       |
 | glmnet       | regularized linear modeling</br>| 4.1.7      |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://glmnet.stanford.edu/index.html                          |
