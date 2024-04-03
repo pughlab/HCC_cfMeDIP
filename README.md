@@ -24,7 +24,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 |--------------|--------------------------------------------|------------|-------------------|----------|----------------------------|------------------------------------------------------------------|
 | FastQC       | FASTQ QC                                   | 0.11.5     | H4H, shell        | Java     |                            | http://www.bioinformatics.babraham.ac.uk/projects/fastqc        |
 | MultiQC      | ❶ FASTQ QC<br>❷ count reads                       | 1.7        | H4H, shell        | Python   |                            | https://multiqc.info                                             |
-| fastp        | ❶ IFSD QC3<br>❷ trim                              | 0.23.1     | H4H, shell        | C++      | ❶ Trim Galore<br>❷ Trimmomatic<br>❸ Cutadapt | https://github.com/OpenGene/fastp                  |
+| fastp        | ❶ IFSD QC3<br>❷ trim                              | 0.23.1     | H4H, shell        | C++      | ❶Trim Galore<br>❷Trimmomatic<br>❸Cutadapt | https://github.com/OpenGene/fastp                  |
 | bowtie2      | align                                      | 2.4.5      | H4H, shell        | C++      | BWA-mem                     | https://bowtie-bio.sourceforge.net/bowtie2/index.shtml          |
 | qualimap     | BAM QC                                     | 2.2        | H4H, shell        | Java     |                            | http://qualimap.conesalab.org                                   |
 | SAMtools     | sort - index                               | 1.14       | H4H, shell        | C        | Picard                      | http://www.htslib.org                                           |
