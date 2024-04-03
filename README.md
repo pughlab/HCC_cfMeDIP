@@ -20,7 +20,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 
 ## Data Analysis
 ### List of Tools
-|Tool         | Function                                   | Version    | Running Platform  | Language | Alternative | Link                                                             |
+|Tool         | Function                                   | Version    | Running_Platform  | Language | Alternative | Link                                                             |
 |:--------------|:---------------------------------------------------------|:------------|:--------------------------|:----------|:----------------------------|:------------------------------------------------------------------|
 | FastQC       | FASTQ QC                                   | 0.11.5     | H4H_shell        | Java     |                            | http://www.bioinformatics.babraham.ac.uk/projects/fastqc        |
 | MultiQC      | ❶FASTQ QC<br>❷count reads                       | 1.7        | H4H_shell        | Python   |                            | https://multiqc.info                                             |
@@ -32,9 +32,9 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | MEDIPS       | ❶QC2<br>❷export wig<br>❸DMRs/ROIs(edgeR)| 1.50.0     | H4H_R/3.5.0      | R        | DESeq2                      | https://doi.org/doi:10.18129/B9.bioc.MEDIPS                     |
 | MeDEStrand   | <div style="width:100px">absolute_methylation_levels</div>| 0.0.0.9000 |H4H_R/3.5.0      | R        |   | https://github.com/jxu1234/MeDEStrand                           |
 | sva/ComBat_seq | reduce batch effect                       | 3.46.0     |H4H_R/4.0.1      | R        |                            | https://github.com/zhangyuqing/ComBat-seq                       |
-| edgeR        |❶TMM normalization<br>❷CPM counts | 3.28.0     |H4H_R/4.0.1      | R        |                            | https://bioconductor.org/packages/release/bioc/html/edgeR.html  |
-| limma        |❶voom_counts(vCounts)<br>❷DMRs(CPM/limma_trend/voom)| 3.42.0 |❶H4H_R/4.0.1<br>❷RStudio | R  |                            | https://bioconductor.org/packages/release/bioc/html/limma.html  |
-| FactoMineR/factoextra |PCA                              | 2.8/1.0.7  |❶H4H_R/4.0.1, RStudio | R  |                            | https://rpkgs.datanovia.com/factoextra/index.html               |
+| edgeR        |❶TMM normalization<br>❷CPM counts| 3.28.0     |H4H_R/4.0.1      | R        |                            | https://bioconductor.org/packages/release/bioc/html/edgeR.html  |
+| limma        |❶vCounts<br>❷DMRs(CPM/limma_trend/voom)| 3.42.0 |❶H4H_R/4.0.1<br>❷RStudio | R  |                            | https://bioconductor.org/packages/release/bioc/html/limma.html  |
+| FactoMineR/factoextra |PCA                              | 2.8/1.0.7  |❶H4H_R/4.0.1<br>❷RStudio | R  |                            | https://rpkgs.datanovia.com/factoextra/index.html               |
 | randomForest |❶build & train models<br>❷classification predictions| 4.7.1.1 |❶H4H_R/3.5.0<br>❷RStudio | R  |                            | https://www.stat.berkeley.edu/users/breiman/RandomForests       |
 | glmnet       | regularized linear modeling                | 4.1.7      |❶H4H_R/3.5.0<br>❷RStudio | R  |                            | https://glmnet.stanford.edu/index.html                          |
 | caret        | model training configuration               | 6.0        |❶H4H_R/3.5.0<br>❷RStudio | R  |                            | https://topepo.github.io/caret                                  |
