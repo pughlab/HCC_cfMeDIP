@@ -30,12 +30,12 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | SAMtools     | sort - index                               | 1.14       | H4H_shell        | C        |Picard                      | http://www.htslib.org                                           |
 | sambamba     | deduplicate                                | 0.7.0      | H4H_shell        | D        |❶ SAMtools<br>❷ Picard| https://lomereiter.github.io/sambamba                           |
 | MEDIPS       | ❶ QC2<br>❷ export wig<br>❸ DMRs/ROIs(edgeR)</br>| 1.50.0     | H4H_R/3.5.0      | R        | DESeq2                      | https://doi.org/doi:10.18129/B9.bioc.MEDIPS                     |
-| MeDEStrand   |absolute methylation level| 0.0.0.9000 |H4H_R/3.5.0      | R        |   | https://github.com/jxu1234/MeDEStrand                           |
+| MeDEStrand   |absolute_methylation_level| 0.0.0.9000 |H4H_R/3.5.0      | R        |   | https://github.com/jxu1234/MeDEStrand                           |
 | sva/ComBat_seq | reduce batch effect                       | 3.46.0     |H4H_R/4.0.1      | R        |                            | https://github.com/zhangyuqing/ComBat-seq                       |
 | edgeR        |❶ TMM normalization<br>❷ CPM counts| 3.28.0     |H4H_R/4.0.1      | R        |                            | https://bioconductor.org/packages/release/bioc/html/edgeR.html  |
 | limma        |❶ vCounts<br>❷ DMRs(CPM-trend)| 3.42.0 |❶ H4H_R/4.0.1<br>❷ RStudio | R  |                            | https://bioconductor.org/packages/release/bioc/html/limma.html  |
 | FactoMineR/factoextra |PCA                              | 2.8/1.0.7  |❶ H4H_R/4.0.1<br>❷ RStudio | R  |                            | https://rpkgs.datanovia.com/factoextra/index.html               |
-| randomForest |❶ build & train models<br>❷ classification_predictions| 4.7.1.1 |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://www.stat.berkeley.edu/users/breiman/RandomForests       |
+| randomForest |❶ build & train models<br>❷_classification_predictions| 4.7.1.1 |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://www.stat.berkeley.edu/users/breiman/RandomForests       |
 | glmnet       |regularized linear modeling| 4.1.7      |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://glmnet.stanford.edu/index.html                          |
 | caret        |model training configuration| 6.0        |❶ H4H_R/3.5.0<br>❷ RStudio | R  |                            | https://topepo.github.io/caret                                  |
 | pROC         |AUROC                                      | 1.18.0     | RStudio           | R        |                            | https://xrobin.github.io/pROC                                   |
