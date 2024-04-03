@@ -20,7 +20,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 
 ## Data Analysis
 ### List of Tools
-<img width="1752" alt="List of Tools" src="https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/a2a02097-6b23-46d6-ada4-f63332149070">
+<img width="1000" alt="List of Tools" src="https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/a2a02097-6b23-46d6-ada4-f63332149070">
 
 ### H4H - R Compatibility Chart
 
