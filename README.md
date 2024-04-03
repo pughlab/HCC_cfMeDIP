@@ -21,7 +21,9 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 ## Data Analysis
 ### List of Tools
 <img width="1752" alt="List of Tools" src="https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/a2a02097-6b23-46d6-ada4-f63332149070">
+
 ### H4H - R Compatibility Chart
+
 |      Package | Version    | H4H/R3.5 | H4H/R4.0 | H4H/R4.2 | --mem  | Running Time |
 | -----------: | :--------- | :------: | :------: | :------: | ------ | ------------ |
 |       MEDIPS | 1.50.0     |   ✅    |    ✅     |  ❌  | ≥ 180G | ~1 day       |
