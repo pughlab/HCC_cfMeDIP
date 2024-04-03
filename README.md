@@ -32,10 +32,10 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | MEDIPS       | ❶QC2<br>❷export wig<br>❸DMRs/ROIs(edgeR)| 1.50.0     | H4H-R/3.5.0      | R        | DESeq2                      | https://doi.org/doi:10.18129/B9.bioc.MEDIPS                     |
 | MeDEStrand   | <div style="width:100px">absolute methylation levels</div>| 0.0.0.9000 |H4H-R/3.5.0      | R        |   | https://github.com/jxu1234/MeDEStrand                           |
 | sva/ComBat_seq | reduce batch effect                       | 3.46.0     |H4H-R/4.0.1      | R        |                            | https://github.com/zhangyuqing/ComBat-seq                       |
-| edgeR        | TMM normalization, CPM counts              | 3.28.0     |H4H-R/4.0.1      | R        |                            | https://bioconductor.org/packages/release/bioc/html/edgeR.html  |
-| limma        | ❶voom counts(v-counts)<br>❷DMRs (CPM/limma-trend,v-count/limma-voom)| 3.42.0 |❶H4H-R/4.0.1<br>❷RStudio | R  |                            | https://bioconductor.org/packages/release/bioc/html/limma.html  |
+| edgeR        |❶TMM normalization<br>❷CPM counts              | 3.28.0     |H4H-R/4.0.1      | R        |                            | https://bioconductor.org/packages/release/bioc/html/edgeR.html  |
+| limma        |❶voom counts(v-counts)<br>❷DMRs (CPM/limma-trend,v-count/limma-voom)| 3.42.0 |❶H4H-R/4.0.1<br>❷RStudio | R  |                            | https://bioconductor.org/packages/release/bioc/html/limma.html  |
 | FactoMineR/factoextra | PCA                              | 2.8/1.0.7  |❶H4H-R/4.0.1, RStudio | R  |                            | https://rpkgs.datanovia.com/factoextra/index.html               |
-| randomForest | ❶build & train models<br>❷classification predictions| 4.7.1.1 |❶H4H-R/3.5.0<br>❷RStudio | R  |                            | https://www.stat.berkeley.edu/users/breiman/RandomForests       |
+| randomForest |❶build & train models<br>❷classification predictions| 4.7.1.1 |❶H4H-R/3.5.0<br>❷RStudio | R  |                            | https://www.stat.berkeley.edu/users/breiman/RandomForests       |
 | glmnet       | regularized linear modeling                | 4.1.7      |❶H4H-R/3.5.0<br>❷RStudio | R  |                            | https://glmnet.stanford.edu/index.html                          |
 | caret        | model training configuration               | 6.0        |❶H4H-R/3.5.0<br>❷RStudio | R  |                            | https://topepo.github.io/caret                                  |
 | pROC         | AUROC                                      | 1.18.0     | RStudio           | R        |                            | https://xrobin.github.io/pROC                                   |
