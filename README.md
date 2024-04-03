@@ -30,7 +30,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | SAMtools     | sort - index                               | 1.14       | H4H, shell        | C        |Picard                      | http://www.htslib.org                                           |
 | sambamba     | deduplicate                                | 0.7.0      | H4H, shell        | D        |❶SAMtools<br>❷Picard            | https://lomereiter.github.io/sambamba                           |
 | MEDIPS       | ❶QC2<br>❷export wig<br>❸DMRs/ROIs(edgeR)| 1.50.0     | H4H-R/3.5.0      | R        | DESeq2                      | https://doi.org/doi:10.18129/B9.bioc.MEDIPS                     |
-| MeDEStrand   | <div style="width:20px">absolute methylation levels</div>| 0.0.0.9000 |H4H-R/3.5.0      | R        |                            | https://github.com/jxu1234/MeDEStrand                           |
+| MeDEStrand   | <div style="width:100px">absolute methylation levels</div>| 0.0.0.9000 |H4H-R/3.5.0      | R        |                            | https://github.com/jxu1234/MeDEStrand                           |
 | sva/ComBat_seq | reduce batch effect                       | 3.46.0     |H4H-R/4.0.1      | R        |                            | https://github.com/zhangyuqing/ComBat-seq                       |
 | edgeR        | TMM normalization, CPM counts              | 3.28.0     |H4H-R/4.0.1      | R        |                            | https://bioconductor.org/packages/release/bioc/html/edgeR.html  |
 | limma        | ❶voom counts(v-counts)<br>❷DMRs (CPM/limma-trend,v-count/limma-voom)| 3.42.0 |❶H4H-R/4.0.1<br>❷RStudio | R  |                            | https://bioconductor.org/packages/release/bioc/html/limma.html  |
