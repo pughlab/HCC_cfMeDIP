@@ -89,7 +89,7 @@ for R1 in *_R1_001.fastq.gz; do
     R2=${SAMPLE}_R2_001.fastq.gz
 
     # fastp performs adapter trimming, quality filtering, and generates HTML reports for quality control
-    fastp -w 10 -i $R1 -I $R2 -o ${SAMPLE}_fp_R1.fastq.gz -O ${SAMPLE}_fp_R2.fastq.gz --correction --html=${SAMPLE}_fastp.html
+    fastp -w 10 -i $R1 -I $R2 -o ${SAMPLE}_fp_R1.fastq.gz -O ${SAMPLE}_fp_R2.fastq.gz -g -f 5 -F 5 --correction --html=${SAMPLE}_fastp.html
     mv ${SAMPLE}_fastp.html $FASTP_DIR
     rm *.json
     # IFSD (Insert Freagments Size Distribution) table were extract form the fastp html reoprt to generate Figure S2B
