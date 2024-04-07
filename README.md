@@ -45,7 +45,21 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | ggplot2      |                                            | 3.4.2      | RStudio           | R        |                            | https://ggplot2.tidyverse.org                                   |
 
 
-❶ ❷ ❸ ❹
+### FastQ to BAM Processing Summary
+|  File Type                   |  Storage Path                  |  Operation/Function                         |
+|:-----------------------------|:-------------------------------|:--------------------------------------------|
+|  **Merged FastQ Files**      |  `../bam`                      |  `cat` for merging L001 and L002            |
+|  **FastQC Pre-Processing**   |  `../fastqc_pre`               |  `fastqc` for initial QC                    |
+|  **Fastp Reports**           |  `../fastqc_pre/fastp_report`  |  `fastp` for quality and adapter trimming   |
+|  **FastQC Post-Processing**  |  `../fastqc_post`              |  `fastqc` for QC after `fastp`              |
+|  **Aligned SAM Files**       |  Temporary storage             |  `bowtie2` for alignment                    |
+|  **Unsorted BAM Files**      |  Temporary storage             |  `samtools view` for SAM to BAM conversion  |
+|  **Sorted BAM Files**        |  `../bam`                      |  `samtools sort` for sorting BAM            |
+|  **BAM Index Files**         |  `../bam`                      |  `samtools index` for indexing BAM          |
+|  **Pre-QC Reports**          |  `../fastq_bam_QC`             |  `samtools flagstat` and `qualimap`         |
+|  **Deduplicated BAM Files**  |  `../bam`                      |  `sambamba markdup` for deduplication       |
+|  **Post-QC Reports**         |  `../fastq_bam_QC`             |  `samtools flagstat` and `qualimap`         |     
+Please note that temporary files, such as unsorted BAM and aligned SAM files, are removed after they are no longer needed to save storage space.
 
 ### H4H - R Compatibility Chart
 
