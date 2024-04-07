@@ -63,6 +63,26 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 
 Please note that temporary files, such as unsorted BAM and aligned SAM files, are removed after they are no longer needed to save storage space.
 
+
+
+### MEDIPS_QC Results List
+This table clearly delineates the output files from the MEDIPS QC analysis, where to find them, and which specific function in the MEDIPS package or custom script is responsible for generating each file. This comprehensive overview aids in understanding the workflow and accessing specific results for further analysis or reporting.
+
+|  Result File Description                                      |  File Pattern/Type                 |  Storage Path                         |  Generating Function                                                                        |
+|:--------------------------------------------------------------|:-----------------------------------|:--------------------------------------|:--------------------------------------------------------------------------------------------|
+|  Saturation Plots                                             |  `_SaturationPlot.pdf`             |  `outdir/pdf/`                        |  `MEDIPS.plotSaturation()`                                                                  |
+|  Sequence Coverage Pie Charts                                 |  `_SeqCoveragePlot_Pie.pdf`        |  `outdir/pdf/`                        |  `MEDIPS.plotSeqCoverage()` (pie)                                                           |
+|  Sequence Coverage Histograms                                 |  `_SeqCoveragePlot_Hist.pdf`       |  `outdir/pdf/`                        |  `MEDIPS.plotSeqCoverage()` (hist)                                                          |
+|  Sequence Coverage Pie Charts (Including Non-Unique Reads)    |  `_SeqCoveragePlot_Pie_uniqF.pdf`  |  `outdir/pdf/`                        |  `MEDIPS.plotSeqCoverage()` (pie)                                                           |
+|  Sequence Coverage Histograms (Including Non-Unique Reads)    |  `_SeqCoveragePlotHist_uniqF.pdf`  |  `outdir/pdf/`                        |  `MEDIPS.plotSeqCoverage()` (hist)                                                          |
+|  Saturation Metrics (**FigureS2A, BAM QC**)                   |  `_saturation.txt`                 |  `outdir/QCstats/`                    |  `MEDIPS.saturation()`                                                                      |
+|  Coverage Metrics                                             |  `_coverage.txt`                   |  `outdir/QCstats/`                    |  `MEDIPS.seqCoverage()`                                                                     |
+|  CpG Enrichment Analysis (**FigureS2A, BAM QC**)              |  `_enrichment.txt`                 |  `outdir/QCstats/`                    |  `MEDIPS.CpGenrich()`                                                                       |
+|  Comprehensive QC Statistics                                  |  `_QCstats.txt`                    |  `outdir/QCstats/`                    |  Custom aggregation of MEDIPS data                                                          |
+|  Window Coordinates per Chromosome                            |  `_window_per_chr.csv`             |  `outdir/` or specified subdirectory  |  Custom script using MEDIPS data                                                            |
+|  PNG versions of Saturation, Coverage, and Calibration Plots  |  Various PNG files                 |  `outdir/png/`                        |  `MEDIPS.plotSaturation()`<br>`MEDIPS.plotSeqCoverage()`<br>`MEDIPS.plotCalibrationPlot()`  |  
+
+
 ### H4H - R Compatibility Chart
 
 |      Package | Version    | H4H/R3.5 | H4H/R4.0 | H4H/R4.2 | --mem  | Running Time |
