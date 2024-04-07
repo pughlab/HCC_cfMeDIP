@@ -44,6 +44,36 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | pROC         |AUROC                                      | 1.18.0     | RStudio           | R        |                            | https://xrobin.github.io/pROC                                   |
 | ggplot2      |                                            | 3.4.2      | RStudio           | R        |                            | https://ggplot2.tidyverse.org                                   |
 
+### Scripts List
+|  Step  |  Script                 |  Analysis                                                                                          |  Panels Generated                                             |  Note                |
+|:-------|:------------------------|:---------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|:---------------------|
+|   1    |  fastq_to_bam.sh        |                                                                                                    |  Figure S2B                                                   |                      |
+|   2    |  bam_to_wig.R           |                                                                                                    |                                                               |                      |
+|   3    |  wig_to_txt.sh          |                                                                                                    |                                                               |                      |
+|   4    |  matrices_processing.R  |                                                                                                    |                                                               |                      |
+|   5    |  medips_qc.R            |                                                                                                    |  Figure S2A                                                   |                      |
+|   6    |  hcc_classifiy_hms.R    |  kFold modeling<br>AUROC<br>HMS<br>PCA<br>confusion matrix<br>CPM<br>Postoperative HMS trajectory  |  Figure 2<br>Figure 3<br>Figure 4C<br>Figure 5<br>Figure S3C  |                      |
+|   7    |  hcc_subgroup.R         |  HCC subgrouping                                                                                   |  Figure S3A/B                                                 |  1-vs-each strategy  |
+|   7s   |  OnevsEach_hcc.R        |  OnevsEach.hcc() required by hcc_subgroup.R                                                        |                                                               |                      |  
+
+
+### Supporting Files List
+
+|  Name                            |  Size      |  Script using this file  |  Description                            |
+|:---------------------------------|:-----------|:-------------------------|:----------------------------------------|
+|  hg19_chr1_22_coord.rds          |  94.4 MB   |  -                       |                                         |
+|  hg19_chr1_22_m_coord.rds        |  94.4 MB   |  matrices_processing.R   |                                         |
+|  hg19_chr1_22_x_y_coord.rds<br>  |  101.4 MB  |  -                       |                                         |
+|  hg19_chr1_22_m_x_y_coord.rds    |  101.4 MB  |  -                       |                                         |
+|  black_bin_v2.RData              |  7.8 MB    |  hcc_classifiy_hms.R     |                                         |
+|  n236_cpm.rds                    |  1.31 GB   |  hcc_classifiy_hms.R     |  cfMeDIP signals (summed CPM) analysis  |
+|  n236_lcpm.rds                   |  1.34 GB   |  hcc_classifiy_hms.R     |                                         |
+|  vCount_n236.RData               |  1.43 GB   |  hcc_classifiy_hms.R     |                                         |
+|  ML_Starting_Data.Rdata          |            |                          |                                         |  
+
+
+
+
 
 ### FastQ to BAM Processing Summary
 |  File Type                   |  Storage Path                  |  Operation/Function                         |
