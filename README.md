@@ -59,6 +59,8 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 |  **Pre-QC Reports**          |  `../fastq_bam_QC`             |  `samtools flagstat` and `qualimap`         |
 |  **Deduplicated BAM Files**  |  `../bam`                      |  `sambamba markdup` for deduplication       |
 |  **Post-QC Reports**         |  `../fastq_bam_QC`             |  `samtools flagstat` and `qualimap`         |     
+
+
 Please note that temporary files, such as unsorted BAM and aligned SAM files, are removed after they are no longer needed to save storage space.
 
 ### H4H - R Compatibility Chart
