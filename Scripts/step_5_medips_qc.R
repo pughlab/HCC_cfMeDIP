@@ -4,14 +4,11 @@
 # Last Modified: 2021-11-12 ################
 
 ##########################################################################################
-# Runnning at H4H cluster with ≥ 180GB memory (veryhimem) configuration ##################
-# Running well with R/3.5.0 module at H4H ################################################
 # Package version : MEDIPS v1.50.0 #######################################################
 # Before starting, make working directory "/path/to/your/MEDIPS_QC" ######################
 # chromosome X and Y were excluded #######################################################
 ##########################################################################################
 
-.libPaths("/cluster/home/username/R/x86_64-pc-linux-gnu-library/3.5")
 library(MEDIPS)
 library(BSgenome.Hsapiens.UCSC.hg19)
 
