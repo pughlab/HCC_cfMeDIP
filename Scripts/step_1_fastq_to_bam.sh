@@ -3,32 +3,6 @@
 # 1st Created: 2021-10-01  #####################################
 # Last Modified: 2023-12-10  ###################################
 
-##########################################################################################
-# Runnning at H4H cluster with ≥ 180GB memory (veryhimem) configuration ##################
-# Running time : ~ 1 day per sample ######################################################
-##########################################################################################
-
-#!/bin/bash
-#SBATCH -t 5-00:00:00
-#SBATCH --mem=180G
-#SBATCH -J f2b
-#SBATCH -p veryhimem
-#SBATCH -c 2
-#SBATCH -N 1
-#SBATCH -o f2b
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=username@uhn.ca
-
-# load tools
-module load fastqc/0.11.5
-module load java
-module load picard
-module load fastp/0.23.1
-module load bowtie2/2.4.5
-module load qualimap/2.2
-module load samtools/1.14
-module load sambamba/0.7.0
-
 echo "Processing of raw FASTQ initiated......"
 
 # Navigate to the directory containing the FASTQ files
