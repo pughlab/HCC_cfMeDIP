@@ -1,7 +1,7 @@
 # Description: Processes raw FASTQ files for genomic analysis, including FASTQ quality control, alignment, sorting, indexing, deduplication, and QC of deduplicated BAM files.
-# Author：Kui Chen → kui.chen@uhn.ca  ###########################
-# 1st Created: 2021-10-01  #####################################
-# Last Modified: 2023-12-10  ###################################
+# Author：Kui Chen → kui.chen@uhn.ca
+# 1st Created: 2021-10-01
+# Last Modified: 2023-12-10
 
 echo "Processing of raw FASTQ initiated......"
 
