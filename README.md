@@ -19,8 +19,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 ![Graphical_abstract](https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/91b31a5c-1920-4214-99c9-5d5c28981fb4)
 
 ## HCC cfMeDIP Data Analysis Scheme
-<img width="2506" alt="HCC_cfMeDIP_data_analysis_shceme_v1" src="https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/4c137a1e-fcce-4dc2-adbd-bd7124ec0be5">
-
+![HCC_cfMeDIP_data_analysis_shceme_v2](https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/5f2a9a0a-8a34-48d5-9475-938b8a6c256d)
 
 ### List of Tools
 |Tool         | Function                                   | Version    | Running_Platform  | Language | Alternative_tool| Link                                                             |
