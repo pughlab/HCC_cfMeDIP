@@ -1,7 +1,7 @@
 # Description: This script extract the ISD (insert size distribution) from fastp report which can be used to generate Fig.S2B & 2C
-# Author：Kui Chen → kui.chen@uhn.ca  ###########################
-# 1st Created: 2021-10-01  #####################################
-# Last Modified: 2023-12-10  ###################################
+# Author：Kui Chen → kui.chen@uhn.ca
+# 1st Created: 2021-10-01
+# Last Modified: 2023-12-10
 
 
 #!/bin/bash
