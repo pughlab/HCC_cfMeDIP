@@ -1,18 +1,17 @@
 # Description: This script was employed to analysis HCC subtypes based on the different liver disease backgrounds using “one-vs-each” tumor subtyping machine learning strategy.
-## Author：Kui Chen → kui.chen@uhn.ca, Ping Luo → ping.luo@uhn.ca ###################################
-## Date Created: 2022-09-01 #########################################################################
-## Last Modified: 2023-12-10 ########################################################################
-# Before starting, do the followings ################################################################
-# 1.make working directory "/path/to/your/counts" ###################################################
-# 2.using source() to introduce the step_7s_one_vs_each_hcc.R code ##################################
-# 3.require "n236_lcpm.rds", "sample_124.rds" #######################################################
+## Author：Kui Chen → kui.chen@uhn.ca, Ping Luo → ping.luo@uhn.ca
+## Date Created: 2022-09-01
+## Last Modified: 2023-12-10
+# Before starting, do the followings
+# 1.using source() to introduce the step_7s_one_vs_each_hcc.R code
+# 2.require "n236_lcpm.rds", "sample_124.rds"
 
 ## Abbreviations ####################################################################################
-# ALD, alcoholic liver disease ######################################################################
-# CTL, healthy control ##############################################################################
-# HBV, hepatitis B virus ############################################################################
-# HCV, hepatitis C virus ############################################################################
-# MASH, Metabolic dysfunction-associated steatohepatitis ############################################
+# ALD, alcoholic liver disease
+# CTL, healthy control
+# HBV, hepatitis B virus
+# HCV, hepatitis C virus
+# MASH, Metabolic dysfunction-associated steatohepatitis
 # ND, no known liver disease ########################################################################
 
 library(dplyr)
