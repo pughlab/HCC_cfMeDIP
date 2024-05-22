@@ -4,14 +4,11 @@
 ## Last Modified: 2022-03-11 ##################################
 
 #####################################################################################################
-# Runnning ~ 2 days at H4H cluster with ≥ 500GB memory (superhimem) configuration ###################
-# Running well with R/4.0.1 module at H4H ###########################################################
 # Before starting, do the followings ################################################################
 # 1.make working directory "/path/to/your/matrices" #################################################
-# 2.copy support files "sample_236.txt", "hg19_chr1_22_m_coord.rds" to the working directory ########
+# 2.copy support files "hg19_chr1_22_m_coord.rds" to the working directory ########
 #####################################################################################################
 
-.libPaths("/cluster/home/username/R/x86_64-pc-linux-gnu-library/4.0")
 library(dplyr)
 library(data.table)
 library(edgeR)
@@ -52,51 +49,60 @@ AllSamplesCounts_withCoords <- AllSamplesCounts_withCoords[,-c(1:4)]
 # simplify colnames
 colnames(AllSamplesCounts_withCoords) <- gsub(".txt", "", colnames(AllSamplesCounts_withCoords))
 sample <- as.data.frame(colnames(AllSamplesCounts_withCoords), drop=F)
-colnames(sample) <- c("Sample_ID")
-Counts_n236_chr1_22_M <- AllSamplesCounts_withCoords
+colnames(sample) <- c("RUN_ID")
+
+count <- as.data.frame(AllSamplesCounts_withCoords)
 
 # Check if the number of rows in the coo matrix is equal to the number of rows in the Counts_n236_chr1_22_M matrix
-if(nrow(coo) == nrow(Counts_n236_chr1_22_M)) {
-  print("The row numbers of coo and Counts_n236_chr1_22_M matrices are consistent.")
+if(nrow(coo) == nrow(count)) {
+  print("The row numbers of coo and count matrices are consistent.")
 } else {
-  print("Warning: The row numbers of coo and Counts_n236_chr1_22_M matrices are not consistent.")
+  print("Warning: The row numbers of coo and count matrices are not consistent.")
 }
 
-# Saving the processed matrices
-save(Counts_n236_chr1_22_M, file="Counts_n236_chr1_22_M.RData")
+# Assign Sample ID (replace RUN_ID with Sample_ID)
+samples <- readRDS('sample.rds')
 
-## Counts data processing
-# load wig_to_txt matrices
+# Ensure the column names of count_236 match sample$RUN_ID
+if (!all(colnames(count) %in% sample$RUN_ID)) {
+ stop("Some column names in count_236 do not match RUN_ID in sample.")
+}
+# Create a mapping vector from RUN_ID to Sample_ID
+name_mapping <- setNames(sample$Sample_ID, sample$RUN_ID)
+# Replace the column names of count with corresponding Sample_IDs
+colnames(count) <- name_mapping[colnames(count)]
+# Check the result
+print(head(count))
+identical(colnames(count), sample$Sample_ID)
+
+# Save the processed matrices
+save(count, samples, file="Counts_n236.RData")
+
 # load("Counts_n236_chr1_22_M.RData")
 
-# load batch info
-samples <- read.table("sample_236.txt", sep = "\t", header = T, stringsAsFactors = F)
-dim(samples)
-
 # Organizing samples and filtering low-count bins
-count_236 <- AllSamplesCounts_withCoords[ ,samples$Sample_ID]
-identical(samples$Sample_ID, colnames(count_236))
-counts <- count_236[rowSums(count_236) >= 1, ]
+identical(samples$Sample_ID, colnames(count))
+counts <- count[rowSums(count) >= 1, ]
 
 # set group info
-group <- as.factor(samples$Group)
+# table(samples$Group)
+group <- as.factor(samples$Group_1)
 
 # check group & batch
-table(samples$Group)
 table(samples$Batch)
 
 # batch effect reducing
 batch <- as.factor(samples$Batch)
 adj <- ComBat_seq(counts, batch=batch, group=group)
 class(adj)
-saveRDS(adj,file="Counts_n236_BE_rd.rds")
+#saveRDS(adj,file="Counts_n236_BE_rd.rds")
 
 # load batch-effecte-reduced counts
 counts <- readRDS("Counts_n236_BE_rd.rds")
 counts <- as.data.frame(counts)
 
 # set group info
-group <- as.factor(samples$Group)
+group <- as.factor(samples$Group_1)
 design <- model.matrix(~group)
 
 # build DGEList
@@ -142,8 +148,4 @@ design <- v$design
 # saving data
 saveRDS(cpm, file="n236_cpm.rds")
 saveRDS(lcpm, file="n236_lcpm.rds")
-saveRDS(lcpmx, file="n236_lcpm_plus1.rds")
-save(vCounts, sample, design, file="vCount_n236.RData")
-
-
-
+saveRDS(vCounts, file="vCount_n236.rds")
