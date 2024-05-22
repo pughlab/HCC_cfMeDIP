@@ -1,11 +1,10 @@
 # Description: This script bulid the HCC classifier using kFold cross-validation machine learning strategy.
-## Author：Kui Chen → kui.chen@uhn.ca; Ping Luo → ping.luo@uhn.ca #############################################
-## Date Created: 2022-07-18 ###################################################################################
-## Last Modified: 2024-02-10 ##################################################################################
-# Before starting, do the followings ##########################################################################
-# 1.make working directory "/path/to/your/ML" #################################################################
-# 2.require support files  "n236_lcpm.rds", "sample.rds", "sample_sq.rds", "black_bin_v2.RData" ###############
-###############################################################################################################
+## Author：Kui Chen → kui.chen@uhn.ca; Ping Luo → ping.luo@uhn.ca
+## Date Created: 2022-07-18
+## Last Modified: 2024-02-10
+# Before starting, do the followings
+# 1.make working directory "/path/to/your/ML"
+# 2.require support files  "n236_lcpm.rds", "sample.rds", "sample_sq.rds", "black_bin_v2.RData"
 
 library(dplyr)
 library(ggplot2)
