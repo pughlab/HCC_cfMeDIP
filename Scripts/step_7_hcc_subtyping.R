@@ -241,6 +241,7 @@ roc_ctl$Dataset <- "CTL"
 
 roc_all <- rbind(roc_hbv, roc_ald, roc_MASH, roc_hcv, roc_nd, roc_ctl)
 
+# plot Fig.S3A ################################
 ggplot(data = roc_all, aes(x = 1 - Spec, y = Sens, colour = Dataset)) +
  theme_bw() +
  geom_line(size = 5) +
@@ -416,7 +417,8 @@ print(get_eigenvalue(res.pca)[1,2])
 # show PC-2
 print(get_eigenvalue(res.pca)[2,2])
 
-# PCA plot
+# PCA plot (Fig.S3B) ################################
+
 qplot(data = b_d, x = x, y = y,  size = I(0), alpha = I(0.1)) +
  theme_bw() +
  theme(text = element_text(size = 65), axis.line = element_line(size = 1)) +
