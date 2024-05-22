@@ -62,14 +62,13 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 |  Name                            |  Size      |  Script using this file  |  Description                            |
 |:---------------------------------|:-----------|:-------------------------|:----------------------------------------|
 |  hg19_chr1_22_coord.rds          |  94.4 MB   |  -                       |                                         |
-|  hg19_chr1_22_m_coord.rds        |  94.4 MB   |  matrices_processing.R   |                                         |
+|  hg19_chr1_22_m_coord.rds        |  94.4 MB   |  step_4_matrices_processing.R   |                                         |
 |  hg19_chr1_22_x_y_coord.rds<br>  |  101.4 MB  |  -                       |                                         |
 |  hg19_chr1_22_m_x_y_coord.rds    |  101.4 MB  |  -                       |                                         |
-|  black_bin_v2.RData              |  7.8 MB    |  hcc_classifiy_hms.R     |                                         |
-|  n236_cpm.rds                    |  1.31 GB   |  hcc_classifiy_hms.R     |  cfMeDIP signals (summed CPM) analysis  |
-|  n236_lcpm.rds                   |  1.34 GB   |  hcc_classifiy_hms.R     |                                         |
-|  vCount_n236.RData               |  1.43 GB   |  hcc_classifiy_hms.R     |                                         |
-|  ML_Starting_Data.Rdata          |            |                          |                                         |  
+|  black_bin_v2.RData              |  7.8 MB    |  step_6_hcc_classifiy_hms.R     |                                         |
+|  n236_cpm.rds                    |  1.31 GB   |  step_6_hcc_classifiy_hms.R     |  cfMeDIP signals (summed CPM) analysis  |
+|  n236_lcpm.rds                   |  1.34 GB   |  step_6_hcc_classifiy_hms.R     |                                         |
+|  vCount_n236.rds              |  1.43 GB   |  step_6_hcc_classifiy_hms.R     |                                         |
 
 
 
