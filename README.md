@@ -27,7 +27,7 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 |--------------:|:----------------------------------------------------------------------|:------------|:--------------------------|:------:|:----------------------------|:------------------------------------------------------------------|
 | FastQC       | FASTQ QC                                   | 0.11.5     | H4H_shell        | Java     |                            | http://www.bioinformatics.babraham.ac.uk/projects/fastqc        |
 | MultiQC      | ❶ FASTQ QC<br>❷ count reads                       | 1.7        | H4H_shell        | Python   |                            | https://multiqc.info                                             |
-| fastp        | ❶ IFSD QC3<br>❷ trim                              | 0.23.1     | H4H_shell        | C++      |❶ Trim Galore<br>❷ Trimmomatic<br>❸ Cutadapt| https://github.com/OpenGene/fastp                  |
+| fastp        | ❶ ISD QC3<br>❷ trim                              | 0.23.1     | H4H_shell        | C++      |❶ Trim Galore<br>❷ Trimmomatic<br>❸ Cutadapt| https://github.com/OpenGene/fastp                  |
 | bowtie2      | align                                      | 2.4.5      | H4H_shell        | C++      |BWA-mem                     | https://bowtie-bio.sourceforge.net/bowtie2/index.shtml          |
 | qualimap     | BAM QC                                     | 2.2        | H4H_shell        | Java     |                            | http://qualimap.conesalab.org                                   |
 | SAMtools     | sort - index                               | 1.14       | H4H_shell        | C        |Picard                      | http://www.htslib.org                                           |
@@ -45,17 +45,17 @@ Bash scripts were run on the high performance computing (HPC) cluster at the Pri
 | ggplot2      |data visualization | 3.4.2      | RStudio           | R        |                            | https://ggplot2.tidyverse.org                                   |
 
 ### Scripts List
-|  Step  |  Script                 |  Analysis                                                                                          |  Panels Generated                                             |  Note                |
-|:-------|:------------------------|:---------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|:---------------------|
-|   1    |  fastq_to_bam.sh        |                                                                                                    |  Figure S2B                                                   |                      |
-|   2    |  bam_to_wig.R           |                                                                                                    |                                                               |                      |
-|   3    |  wig_to_txt.sh          |                                                                                                    |                                                               |                      |
-|   4    |  matrices_processing.R  |                                                                                                    |                                                               |                      |
-|   5    |  medips_qc.R            |                                                                                                    |  Figure S2A                                                   |                      |
-|   6    |  hcc_classifiy_hms.R    |  kFold modeling<br>AUROC<br>HMS<br>PCA<br>confusion matrix<br>CPM<br>Postoperative HMS trajectory  |  Figure 2<br>Figure 3<br>Figure 4C<br>Figure 5<br>Figure S3C  |                      |
-|   7    |  hcc_subgroup.R         |  HCC subgrouping                                                                                   |  Figure S3A/B                                                 |  1-vs-each strategy  |
-|   7s   |  OnevsEach_hcc.R        |  OnevsEach.hcc() required by hcc_subgroup.R                                                        |                                                               |                      |  
-
+| Step | Script                       | Analysis                                                                                                           | Panels Generated                                           |
+| :--- | :--------------------------- | :----------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------- |
+| 1    | step_1_fastq_to_bam.sh       |                                                                                                                    |                                                            |
+| 1s   | step_1s_ISD.sh               | QC                                                                                                                 | Figure S2B/2C                                              |
+| 2    | step_2_bam_to_wig.R          |                                                                                                                    |                                                            |
+| 3    | step_3_wig_to_txt.sh         |                                                                                                                    |                                                            |
+| 4    | step_4_matrices_processing.R |                                                                                                                    |                                                            |
+| 5    | step_5_medips_qc.R           | QC                                                                                                                 | Figure S2A                                                 |
+| 6    | step_6_hcc_classifiy_hms.R   | kFold modeling<br>AUROC<br>HMS<br>PCA<br>Confusion matrix<br>Simply moving average<br>Postoperative HMS trajectory | Figure 2<br>Figure 3<br>Figure 4<br>Figure 5<br>Figure S3C |
+| 7    | step_7_hcc_subtyping.R       | HCC subgrouping                                                                                                    | Figure S3A/B                                               |
+| 7s   | step_7s_one_vs_each_hcc.R    | OnevsEach.hcc() required by hcc_subgroup.R                                                                         |                                                            |
 
 ### Supporting Files List
 
