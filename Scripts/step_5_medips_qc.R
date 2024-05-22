@@ -1,12 +1,12 @@
 # Description: This script conducts QC of deduplicated BAM files using MEDIPS, especially for saturation & enrichment testing on IP reaction during MeDIP. The output metrics were used to generate Fig. S2A.
-# Author：Kui Chen → kui.chen@uhn.ca ########
-# 1st Created: 2020-06-21 ##################
-# Last Modified: 2021-11-12 ################
+# Author：Kui Chen → kui.chen@uhn.ca
+# 1st Created: 2020-06-21
+# Last Modified: 2021-11-12
 
 ##########################################################################################
-# Package version : MEDIPS v1.50.0 #######################################################
-# Before starting, make working directory "/path/to/your/MEDIPS_QC" ######################
-# chromosome X and Y were excluded #######################################################
+# Package version : MEDIPS v1.50.0
+# Before starting, make working directory "/path/to/your/MEDIPS_QC"
+# chromosome X and Y were included
 ##########################################################################################
 
 library(MEDIPS)
