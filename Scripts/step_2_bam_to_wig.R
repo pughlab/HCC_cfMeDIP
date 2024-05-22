@@ -2,6 +2,7 @@
 # Author：Kui Chen → kui.chen@uhn.ca
 # 1st Created: 2020-07-11
 # Last Modified: 2023-12-20
+# chromosome X and Y were excluded
 
 library(MEDIPS)
 library(edgeR)
