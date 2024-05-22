@@ -1,12 +1,12 @@
 # Description: This script processes raw FASTQ files for genomic analysis, including FASTQ quality control, alignment, sorting, indexing, deduplication, and QC of deduplicated BAM files.
-## Author：Kui Chen → kui.chen@uhn.ca #########################
-## Date Created: 2020-08-21 ###################################
-## Last Modified: 2022-03-11 ##################################
+## Author：Kui Chen → kui.chen@uhn.ca
+## Date Created: 2020-08-21
+## Last Modified: 2022-03-11
 
 #####################################################################################################
-# Before starting, do the followings ################################################################
-# 1.make working directory "/path/to/your/matrices" #################################################
-# 2.copy support files "hg19_chr1_22_m_coord.rds" to the working directory ########
+# Before starting, do the followings
+# 1.make working directory "/path/to/your/matrices"
+# 2.copy support files "hg19_chr1_22_m_coord.rds" to the working directory
 #####################################################################################################
 
 library(dplyr)
