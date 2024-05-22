@@ -1,7 +1,7 @@
-# Description: This code supports the one-vs-each HCC subtyping main script ##########
-## Author：Ping Luo → ping.luo@uhn.ca, Kui Chen → kui.chen@uhn.ca ####################
-## Date Created: 2022-09-2 ###########################################################
-## Last Modified: 2023-12-16 #########################################################
+# Description: This code supports the one-vs-each HCC subtyping main script
+## Author：Ping Luo → ping.luo@uhn.ca, Kui Chen → kui.chen@uhn.ca
+## Date Created: 2022-09-2
+## Last Modified: 2023-12-16
 
 SplitkFold <- function(Mat, Classes, K){
 
