@@ -1,12 +1,12 @@
-# Description: This script processes raw FASTQ files for genomic analysis, including FASTQ quality control, alignment, sorting, indexing, deduplication, and QC of deduplicated BAM files.
-## Author：Kui Chen → kui.chen@uhn.ca
-## Date Created: 2020-08-21
-## Last Modified: 2022-03-11
+# Description: This script processes raw counts matrix generated from step_3_wig_to_txt.sh and generate CPM (counts-per-million), logCPM (lcpm) and TMM-normalized counts. Library batch effects was also reduced using sva/ComBat-seq.
+## Author：Kui Chen → kui.chen@uhn.ca #########################
+## Date Created: 2020-08-21 ###################################
+## Last Modified: 2022-03-11 ##################################
 
 #####################################################################################################
-# Before starting, do the followings
-# 1.make working directory "/path/to/your/matrices"
-# 2.copy support files "hg19_chr1_22_m_coord.rds" to the working directory
+# Before starting, do the followings ################################################################
+# 1.make working directory "/path/to/your/matrices" #################################################
+# 2.copy support files "hg19_chr1_22_m_coord.rds" to the working directory ########
 #####################################################################################################
 
 library(dplyr)
@@ -149,3 +149,7 @@ design <- v$design
 saveRDS(cpm, file="n236_cpm.rds")
 saveRDS(lcpm, file="n236_lcpm.rds")
 saveRDS(vCounts, file="vCount_n236.rds")
+
+
+
+
