@@ -19,7 +19,7 @@ The R packages required are detailed within each script.
 ## HCC cfMeDIP Data Analysis Scheme
 ![HCC_cfMeDIP_data_analysis_shceme_v2](https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/5f2a9a0a-8a34-48d5-9475-938b8a6c256d)
 
-## List of Dependencies
+## Dependencies
 |Tool         | Function                                   | Version    | Running_Platform  | Language | Alternative_tool| Link                                                             |
 |--------------:|:----------------------------------------------------------------------|:------------|:--------------------------|:------:|:----------------------------|:------------------------------------------------------------------|
 | FastQC       | FASTQ QC                                   | 0.11.5     | H4H_shell        | Java     |                            | http://www.bioinformatics.babraham.ac.uk/projects/fastqc        |
