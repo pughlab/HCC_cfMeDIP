@@ -10,8 +10,8 @@ The repository contains bash scripts, data processing scripts, and R scripts des
 
 ## Setup
 R scripts were executed in either R version 3.5.0 or 4.0.1, depending on the specific package dependencies (listeded in Table 1), utilizing RStudio versions (2022.12.0+353 ~ 2023.12.0+369).  
+
 The R packages required are detailed within each script.  
-Bash scripts were run on the high performance computing (HPC) cluster at the Princess Margaret Genomics Centre (University Health Network).
 
 ## HCC cfMeDIP Study Workflow
 ![Graphical_abstract](https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/91b31a5c-1920-4214-99c9-5d5c28981fb4)
