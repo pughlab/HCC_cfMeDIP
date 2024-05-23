@@ -52,7 +52,7 @@ The R packages required are detailed within each script.
 | 3    | step_3_wig_to_txt.sh         |                                                                                                                    |                                                            |
 | 4    | step_4_matrices_processing.R |                                                                                                                    |                                                            |
 | 5    | step_5_medips_qc.R           | QC                                                                                                                 | Figure S2A                                                 |
-| 6    | step_6_hcc_classifiy_hms.R   | kFold modeling<br>AUROC<br>HMS<br>PCA<br>Confusion matrix<br>Simply moving average<br>Postoperative HMS trajectory | Figure 2<br>Figure 3<br>Figure 4<br>Figure 5<br>Figure S3C |
+| 6    | step_6_hcc_classifiy_hms.R   | kFold modeling<br>AUROC<br>HMS<br>PCA<br>Confusion matrix<br>Simply moving average<br>Postoperative HMS trajectory | Figure 2<br>Figure 3<br>Figure 4<br>Figure 5<br>Figure S3C<br>Figure S4 |
 | 7    | step_7_hcc_subtyping.R       | HCC subgrouping                                                                                                    | Figure S3A/B                                               |
 | 7s   | step_7s_one_vs_each_hcc.R    | OnevsEach.hcc() required by hcc_subgroup.R                                                                         |                                                            |
 
