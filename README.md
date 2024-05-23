@@ -57,17 +57,21 @@ The R packages required are detailed within each script.
 | 7s   | step_7s_one_vs_each_hcc.R    | OnevsEach.hcc() required by hcc_subgroup.R                                                                         |                                                            |
 
 ### Supporting Files List
-|  Name                            |  Size      |  Script using this file  |  Description                            |
-|:---------------------------------|:-----------|:-------------------------|:----------------------------------------|
-|  hg19_chr1_22_coord.rds          |  94.4 MB   |  -                       |                                         |
-|  hg19_chr1_22_m_coord.rds        |  94.4 MB   |  step_4_matrices_processing.R   |                                         |
-|  hg19_chr1_22_x_y_coord.rds<br>  |  101.4 MB  |  -                       |                                         |
-|  hg19_chr1_22_m_x_y_coord.rds    |  101.4 MB  |  -                       |                                         |
-|  black_bin_v2.RData              |  7.8 MB    |  step_6_hcc_classifiy_hms.R     |                                         |
-|  n236_cpm.rds                    |  1.31 GB   |  step_6_hcc_classifiy_hms.R     |  cfMeDIP signals (summed CPM) analysis  |
-|  n236_lcpm.rds                   |  1.34 GB   |  step_6_hcc_classifiy_hms.R     |                                         |
-|  vCount_n236.rds              |  1.43 GB   |  step_6_hcc_classifiy_hms.R     |                                         |
-
+| Name                           | Size     | Script using this file       | Description                                                         |
+| :----------------------------- | :------- | :--------------------------- | :------------------------------------------------------------------ |
+| hg19_chr1_22_m_coord.rds       | 90 MB    | step_4_matrices_processing.R | genomic coordinates for *4801145* 300bp bins (hg19, chr:1-22 and M) |
+| hg19_chr1_22_coord.rds         | 94.4 MB  | -                            | optional if only chr:1-22 needed                                    |
+| hg19_chr1_22_x_y_coord.rds<br> | 101.4 MB | -                            | optional if only chr:X&Y needed                                     |
+| hg19_chr1_22_m_x_y_coord.rds   | 101.4 MB | -                            | optional if only chr:M needed                                       |
+| black_bin_v2.RData             | 7.8 MB   | step_6_hcc_classifiy_hms.R   | *109120* bins falling in ENCODE blacklist regions                   |
+| n236_cpm.rds                   | 1.31 GB  | -                            | cfMeDIP signals (summed CPM) analysis                               |
+| n236_lcpm.rds                  | 1.33 GB  | step_6_hcc_classifiy_hms.R   | matrix for kFold cross-validation *limma-trend*                     |
+| vCount_n236.RData              | 1.33 GB  | -                            | option for *limma-voom*                                             |
+| sample.rds                     | 1KB      | step_6_hcc_classifiy_hms.R   | Clinical metadata                                                   |
+| sample_sq.rds                  | 1KB      | step_6_hcc_classifiy_hms.R   | Clinical metadata                                                   |
+| sample_124.rds                 | 1KB      | step_7_hcc_subtyping.R       | Clinical metadata                                                   |
+| kFold_ML_res.RData             | 1.5 MB   | step_6_hcc_classifiy_hms.R   | machine learning result of discovery cohort                         |
+| Val.prob.list.rds              | 11.1 MB  | step_6_hcc_classifiy_hms.R   | machine learning result of validation cohort                        |
 
 ### FastQ to BAM Processing Summary
 |  File Type                   |  Storage Path                  |  Operation/Function                         |
