@@ -57,7 +57,6 @@ The R packages required are detailed within each script.
 | 7s   | step_7s_one_vs_each_hcc.R    | OnevsEach.hcc() required by hcc_subgroup.R                                                                         |                                                            |
 
 ### Supporting Files List
-
 |  Name                            |  Size      |  Script using this file  |  Description                            |
 |:---------------------------------|:-----------|:-------------------------|:----------------------------------------|
 |  hg19_chr1_22_coord.rds          |  94.4 MB   |  -                       |                                         |
@@ -68,9 +67,6 @@ The R packages required are detailed within each script.
 |  n236_cpm.rds                    |  1.31 GB   |  step_6_hcc_classifiy_hms.R     |  cfMeDIP signals (summed CPM) analysis  |
 |  n236_lcpm.rds                   |  1.34 GB   |  step_6_hcc_classifiy_hms.R     |                                         |
 |  vCount_n236.rds              |  1.43 GB   |  step_6_hcc_classifiy_hms.R     |                                         |
-
-
-
 
 
 ### FastQ to BAM Processing Summary
@@ -138,6 +134,8 @@ This table clearly delineates the output files from the MEDIPS QC analysis, wher
 | MEDIPS/QC            | - BSgenome="BSgenome.Hsapiens.UCSC.hg19"<br>- uniq <- 1<br>- **extend <- 300**<br>- shift <- 0<br>-**ws <- 300**<br>- paired <- TRUE<br>- chr.select <- paste0("chr",c(1:22,"X","Y","M")) | NA                                                                                                                   | BSgenome.Hsapiens.UCSC.hg19                                                        |
 | MEDIPS/wig_to_counts | - BSgenome="BSgenome.Hsapiens.UCSC.hg19"<br>- **uniq <- 1e-3**<br>- extend <- 300<br>- shift <- 0<br>- ws <- 300<br>- paired <- TRUE<br>- chr.select <- paste0("chr",c(1:22,"M"))         | 􀄵hg19_chr1_22_m_coord.rds<br>􀄵hg19_all_chr_coord.rds<br>􀄵hg19_chr1_22_x_coord.rds<br>􀄵hg19_chr1_22_x_y_coord.rds | 􀄵BSgenome.Hsapiens.UCSC.hg19<br>􀄵edgeR                                           |
 | MeDEStrand           | - BSgenome="BSgenome.Hsapiens.UCSC.hg19"<br>- uniq <- 1<br>- extend <- 300<br>- shift <- 0<br>- ws <- 300<br>- paired <- TRUE<br>- chr.select <- paste0("chr",c(1:22,"M"))                |                                                                                                                      | 􀄵BSgenome.Hsapiens.UCSC.hg19<br>􀄵BSgenome<br>􀄵GenomicRanges<br>􀄵MEDIPSData<br> |
+## Data availability
+Clinical metadata, raw fastq files and processed cfMeDIP-seq data used to replicate the study are available to qualified researchers at the European Genome-Phenome Archive under accession number 
 
 ## Contact
 Kui Chen, kui.chen@uhn.ca
