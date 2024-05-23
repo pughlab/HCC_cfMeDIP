@@ -8,10 +8,7 @@ Our findings demonstrate the potential of cfMeDIP-Seq for sensitive and specific
 ## Contents
 The repository contains bash scripts, data processing scripts, and R scripts designed to reproduce figures for the manuscript "Plasma cell-free DNA methylomes for hepatocellular carcinoma detection and monitoring after liver resection or transplantation"
 
-## Setup
-R scripts were executed in either R version 3.5.0 or 4.0.1, depending on the specific package dependencies (listeded in Table 1), utilizing RStudio versions (2022.12.0+353 ~ 2023.12.0+369).  
 
-The R packages required are detailed within each script.  
 
 ## HCC cfMeDIP Study Workflow
 ![Graphical_abstract](https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/91b31a5c-1920-4214-99c9-5d5c28981fb4)
@@ -19,7 +16,12 @@ The R packages required are detailed within each script.
 ## HCC cfMeDIP Data Analysis Scheme
 ![HCC_cfMeDIP_data_analysis_shceme_v2](https://github.com/pughlab/HCC_cfMeDIP/assets/109993615/5f2a9a0a-8a34-48d5-9475-938b8a6c256d)
 
-## Dependencies
+## Setup
+R scripts were executed in either R version 3.5.0 or 4.0.1, depending on the specific package dependencies (listeded in Table 1), utilizing RStudio versions (2022.12.0+353 ~ 2023.12.0+369).  
+
+The R packages required are detailed within each script.  
+
+### Dependencies
 |Tool         | Function                                   | Version    | Running_Platform  | Language | Alternative_tool| Link                                                             |
 |--------------:|:----------------------------------------------------------------------|:------------|:--------------------------|:------:|:----------------------------|:------------------------------------------------------------------|
 | FastQC       | FASTQ QC                                   | 0.11.5     | H4H_shell        | Java     |                            | http://www.bioinformatics.babraham.ac.uk/projects/fastqc        |
@@ -89,8 +91,6 @@ The R packages required are detailed within each script.
 
 Please note that temporary files, such as unsorted BAM and aligned SAM files, are removed after they are no longer needed to save storage space.
 
-
-
 ### MEDIPS_QC Results List
 This table clearly delineates the output files from the MEDIPS QC analysis, where to find them, and which specific function in the MEDIPS package or custom script is responsible for generating each file. This comprehensive overview aids in understanding the workflow and accessing specific results for further analysis or reporting.
 
@@ -108,9 +108,7 @@ This table clearly delineates the output files from the MEDIPS QC analysis, wher
 |  Window Coordinates per Chromosome                            |  `_window_per_chr.csv`             |  `outdir/` or specified subdirectory  |  Custom script using MEDIPS data                                                            |
 |  PNG versions of Saturation, Coverage, and Calibration Plots  |  Various PNG files                 |  `outdir/png/`                        |  `MEDIPS.plotSaturation()`<br>`MEDIPS.plotSeqCoverage()`<br>`MEDIPS.plotCalibrationPlot()`  |  
 
-
 ### H4H - R Compatibility Chart
-
 |      Package | Version    | H4H/R3.5 | H4H/R4.0 | H4H/R4.2 | --mem  | Running Time |
 | -----------: | :--------- | :------: | :------: | :------: | ------ | ------------ |
 |       MEDIPS | 1.50.0     |   ✅    |    ✅     |  ❌  | ≥ 180G | ~1 day       |
@@ -129,10 +127,7 @@ This table clearly delineates the output files from the MEDIPS QC analysis, wher
 |       glmnet | 4.1.7      |    ✅     |  ❌  |  ❌  | ≥ 80G  | ~2 days      |
 
 
-
-
 ### Key Arguments
-
 | Tools                | <span style="font-size: 15px;">Arguments</span>                                                                                                                                           | Support Data                                                                                                         | Dependencies                                                                       |
 | :------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | fastp                | -w 10<br>-g<br>-f 5<br>-F 5<br>--**adapor_F==**<br>--**adapor_R==**<br>--correction<br>--html=$.html                                                                                      | Adaptor Sequences Table                                                                                              |                                                                                    |
@@ -143,3 +138,6 @@ This table clearly delineates the output files from the MEDIPS QC analysis, wher
 | MEDIPS/QC            | - BSgenome="BSgenome.Hsapiens.UCSC.hg19"<br>- uniq <- 1<br>- **extend <- 300**<br>- shift <- 0<br>-**ws <- 300**<br>- paired <- TRUE<br>- chr.select <- paste0("chr",c(1:22,"X","Y","M")) | NA                                                                                                                   | BSgenome.Hsapiens.UCSC.hg19                                                        |
 | MEDIPS/wig_to_counts | - BSgenome="BSgenome.Hsapiens.UCSC.hg19"<br>- **uniq <- 1e-3**<br>- extend <- 300<br>- shift <- 0<br>- ws <- 300<br>- paired <- TRUE<br>- chr.select <- paste0("chr",c(1:22,"M"))         | 􀄵hg19_chr1_22_m_coord.rds<br>􀄵hg19_all_chr_coord.rds<br>􀄵hg19_chr1_22_x_coord.rds<br>􀄵hg19_chr1_22_x_y_coord.rds | 􀄵BSgenome.Hsapiens.UCSC.hg19<br>􀄵edgeR                                           |
 | MeDEStrand           | - BSgenome="BSgenome.Hsapiens.UCSC.hg19"<br>- uniq <- 1<br>- extend <- 300<br>- shift <- 0<br>- ws <- 300<br>- paired <- TRUE<br>- chr.select <- paste0("chr",c(1:22,"M"))                |                                                                                                                      | 􀄵BSgenome.Hsapiens.UCSC.hg19<br>􀄵BSgenome<br>􀄵GenomicRanges<br>􀄵MEDIPSData<br> |
+
+## Contact
+Kui Chen, kui.chen@uhn.ca
