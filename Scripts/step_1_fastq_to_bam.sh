@@ -3,6 +3,11 @@
 # 1st Created: 2021-10-01
 # Last Modified: 2023-12-10
 
+#####################################################################################################
+# Before starting, do the followings ################################################################
+# copy support files in hg19_reference folder to the working directory ##############################
+#####################################################################################################
+
 echo "Processing of raw FASTQ initiated......"
 
 # Navigate to the directory containing the FASTQ files
