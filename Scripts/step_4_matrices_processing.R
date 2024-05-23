@@ -1,7 +1,7 @@
 # Description: This script processes raw counts matrix generated from step_3_wig_to_txt.sh and generate CPM (counts-per-million), logCPM (lcpm) and TMM-normalized counts. Library batch effects was also reduced using sva/ComBat-seq.
-## Author：Kui Chen → kui.chen@uhn.ca #########################
-## Date Created: 2020-08-21 ###################################
-## Last Modified: 2022-03-11 ##################################
+## Author：Kui Chen → kui.chen@uhn.ca
+## Date Created: 2020-08-21
+## Last Modified: 2022-03-11
 
 #####################################################################################################
 # Before starting, do the followings ################################################################
